@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Instagram</title>
+    <style>
+
+      body {
+        background-color: #fafafa;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        padding-top: 80px;
+      }
+
+      .card {
+        background-color: white;
+        border: 1px solid #dbdbdb;
+        padding: 40px;
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      h1 {
+        font-size: 50px;
+        margin-bottom: 20px;
+      }
+
+      input {
+        width: 100%;
+        padding: 9px;
+        margin-bottom: 8px;
+        border: 1px solid #dbdbdb;
+        border-radius: 3px;
+        background: #fafafa;
+        font-size: 12px;
+      }
+
+      button {
+        width: 100%;
+        padding: 8px;
+        background-color: #0095f6;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 8px;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <div class="card">
+      <h1>Instagram</h1>
+      <input type="text" placeholder="Username or email" />
+      <input type="password" placeholder="Password" />
+      <button onclick="login()">Log in</button>
+    </div>
+
+    <script>
+      function login() {
+        window.open("https://www.instagram.com", "_blank");
+      }
+    </script>
+
+  </body>
+</html>
